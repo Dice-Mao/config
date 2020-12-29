@@ -1,9 +1,8 @@
 spring:
   application:
     name: zuul
-    
     cloud:
-     config:
+    config:
       override-none: true
     
     
