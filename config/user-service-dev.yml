@@ -16,11 +16,18 @@ spring:
     config:
     override-none: true
     
-rabbitmq:
+  rabbitmq:
     host: 192.168.163.134
     port: 5672
     username: admin
-password: admin
+    password: admin
+    
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
 
     
     
@@ -45,8 +52,4 @@ server:
   port: 8102
   
   
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh
+
