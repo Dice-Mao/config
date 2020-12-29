@@ -43,3 +43,10 @@ spring:
   profiles: user2
 server:
   port: 8102
+  
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
